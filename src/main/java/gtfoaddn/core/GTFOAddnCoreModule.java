@@ -1,5 +1,6 @@
 package gtfoaddn.core;
 
+import gregtech.loaders.recipe.GTRecipeManager;
 import gregtech.loaders.recipe.RecyclingRecipes;
 import gtfoaddn.api.GTFOAddnValues;
 import gtfoaddn.api.modules.GTFOAddnModule;
@@ -8,6 +9,8 @@ import gtfoaddn.client.renderer.texture.GTFOAddnTextures;
 import gtfoaddn.common.CommonProxy;
 import gtfoaddn.common.items.GTFOAddnMetaItems;
 import gtfoaddn.common.metatileentities.GTFOAddnMetaTileEntities;
+import gtfoaddn.loaders.GTFOAddnRecipeManager;
+import gtfoaddn.loaders.recipe.GTFOAddnFuelRecipes;
 import gtfoaddn.modules.GTFOAddnModules;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -50,7 +53,6 @@ public class GTFOAddnCoreModule implements IGTFOAddnModule {
     @Override
     public void preInit(FMLPreInitializationEvent event) {
         proxy.preInit(event);
-
         //GTFOAddnMetaBlocks.init();
         GTFOAddnMetaItems.init();
         GTFOAddnTextures.init();
@@ -58,7 +60,9 @@ public class GTFOAddnCoreModule implements IGTFOAddnModule {
     }
 
     @Override
-    public void init(FMLInitializationEvent event) {}
+    public void init(FMLInitializationEvent event) {
+        GTFOAddnRecipeManager.load();
+    }
 
     @Override
     public void postInit(FMLPostInitializationEvent event) {
@@ -85,6 +89,7 @@ public class GTFOAddnCoreModule implements IGTFOAddnModule {
     public void registerRecipesLowest(RegistryEvent.Register<IRecipe> event) {
         //GTFOAddnRecipe.init();
         //GTFOAddnWoodRecipe.init();
+        GTFOAddnFuelRecipes.registerFuels();
         //CEUOverrideRecipe.init();
         //VanillaOverrideRecipes.init();
     }

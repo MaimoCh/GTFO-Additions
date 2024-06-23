@@ -15,7 +15,7 @@ import static gtfoaddn.api.util.GTFOAddnUtility.gtfoaddnId;
 
 public class GTFOAddnMetaTileEntities {
     //generators
-    public static final SimpleGeneratorMetaTileEntity[] FAT_BURNING_GENERATOR = new SimpleGeneratorMetaTileEntity[4];
+    public static final SimpleGeneratorMetaTileEntity[] FAT_BURNING_GENERATOR = new SimpleGeneratorMetaTileEntity[6];
 
     public static void init() {
         GTFOAddnLog.logger.info("Registering MetaTileEntities");
@@ -41,17 +41,29 @@ public class GTFOAddnMetaTileEntities {
          * - FREE RANGE 11000-32767
          */
 
-        FAT_BURNING_GENERATOR[0] = registerMetaTileEntity(31001,
+        FAT_BURNING_GENERATOR[0] = registerMetaTileEntity(31000,
                 new MetaTileEntitySingleBurning(gtfoaddnId("fat_burning_generator.lv"),
                         GTFOAddnRecipeMaps.BURNING_GENERATOR_FUELS, GTFOAddnTextures.FAT_BURNING_GENERATOR_OVERLAY, 1,
                         GTUtility.genericGeneratorTankSizeFunction));
-        FAT_BURNING_GENERATOR[1] = registerMetaTileEntity(31002,
+        FAT_BURNING_GENERATOR[1] = registerMetaTileEntity(31001,
                 new MetaTileEntitySingleBurning(gtfoaddnId("fat_burning_generator.mv"),
                         GTFOAddnRecipeMaps.BURNING_GENERATOR_FUELS, GTFOAddnTextures.FAT_BURNING_GENERATOR_OVERLAY, 2,
                         GTUtility.genericGeneratorTankSizeFunction));
-        FAT_BURNING_GENERATOR[2] = registerMetaTileEntity(31003,
+        FAT_BURNING_GENERATOR[2] = registerMetaTileEntity(31002,
                 new MetaTileEntitySingleBurning(gtfoaddnId("fat_burning_generator.hv"),
                         GTFOAddnRecipeMaps.BURNING_GENERATOR_FUELS, GTFOAddnTextures.FAT_BURNING_GENERATOR_OVERLAY, 3,
+                        GTUtility.genericGeneratorTankSizeFunction));
+        FAT_BURNING_GENERATOR[3] = registerMetaTileEntity(31003,
+                new MetaTileEntitySingleBurning(gtfoaddnId("fat_burning_generator.ev"),
+                        GTFOAddnRecipeMaps.BURNING_GENERATOR_FUELS, GTFOAddnTextures.FAT_BURNING_GENERATOR_OVERLAY, 4,
+                        GTUtility.genericGeneratorTankSizeFunction));
+        FAT_BURNING_GENERATOR[4] = registerMetaTileEntity(31004,
+                new MetaTileEntitySingleBurning(gtfoaddnId("fat_burning_generator.iv"),
+                        GTFOAddnRecipeMaps.BURNING_GENERATOR_FUELS, GTFOAddnTextures.FAT_BURNING_GENERATOR_OVERLAY, 5,
+                        GTUtility.genericGeneratorTankSizeFunction));
+        FAT_BURNING_GENERATOR[5] = registerMetaTileEntity(31005,
+                new MetaTileEntitySingleBurning(gtfoaddnId("fat_burning_generator.luv"),
+                        GTFOAddnRecipeMaps.BURNING_GENERATOR_FUELS, GTFOAddnTextures.FAT_BURNING_GENERATOR_OVERLAY, 6,
                         GTUtility.genericGeneratorTankSizeFunction));
     }
 }
