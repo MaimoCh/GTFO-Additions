@@ -3,15 +3,13 @@ package gtfoaddn.common.metatileentities;
 import gregtech.api.GTValues;
 import gregtech.api.metatileentity.SimpleGeneratorMetaTileEntity;
 import gregtech.api.metatileentity.SimpleMachineMetaTileEntity;
-import gregtech.api.recipes.RecipeMaps;
 import gregtech.api.util.GTUtility;
 import gregtech.client.renderer.texture.Textures;
-import gregtech.common.metatileentities.electric.MetaTileEntitySingleCombustion;
 import gtfoaddn.api.util.GTFOAddnLog;
+import gtfoaddn.api.util.GTFOAddnUtility;
 import gtfoaddn.client.renderer.texture.GTFOAddnTextures;
 import gtfoaddn.common.metatileentities.electric.MetaTileEntitySingleBurning;
 import gtfoaddn.recipe.GTFOAddnRecipeMaps;
-import net.minecraft.util.ResourceLocation;
 
 import static gregtech.common.metatileentities.MetaTileEntities.registerMetaTileEntity;
 import static gregtech.common.metatileentities.MetaTileEntities.registerSimpleMetaTileEntity;
@@ -75,7 +73,7 @@ public class GTFOAddnMetaTileEntities {
                         GTUtility.genericGeneratorTankSizeFunction));
 
         //Simple Machines 32000~32099
-        registerSimpleMetaTileEntity(NUTRITION_EXTRACTOR, 305, "nutrition_extractor", GTFOAddnRecipeMaps.NUTRITION_EXTRACTOR_RECIPES,
-                Textures.EXTRACTOR_OVERLAY, true,gtfoaddnId("nutrition_extractor"), GTUtility.hvCappedTankSizeFunction);
+        registerSimpleMetaTileEntity(NUTRITION_EXTRACTOR, 32000, "nutrition_extractor", GTFOAddnRecipeMaps.NUTRITION_EXTRACTOR_RECIPES,
+                Textures.EXTRACTOR_OVERLAY, true, GTFOAddnUtility::gtfoaddnId, GTUtility.hvCappedTankSizeFunction);
     }
 }
