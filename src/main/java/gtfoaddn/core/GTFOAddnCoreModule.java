@@ -1,17 +1,16 @@
 package gtfoaddn.core;
 
-import gregtech.common.metatileentities.MetaTileEntities;
 import gregtech.loaders.recipe.RecyclingRecipes;
 import gtfoaddn.api.GTFOAddnValues;
 import gtfoaddn.api.modules.GTFOAddnModule;
 import gtfoaddn.api.modules.IGTFOAddnModule;
+import gtfoaddn.client.renderer.texture.GTFOAddnTextures;
 import gtfoaddn.common.CommonProxy;
 import gtfoaddn.common.items.GTFOAddnMetaItems;
 import gtfoaddn.common.metatileentities.GTFOAddnMetaTileEntities;
 import gtfoaddn.modules.GTFOAddnModules;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -19,7 +18,6 @@ import net.minecraftforge.fml.common.event.FMLConstructionEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
@@ -55,6 +53,7 @@ public class GTFOAddnCoreModule implements IGTFOAddnModule {
 
         //GTFOAddnMetaBlocks.init();
         GTFOAddnMetaItems.init();
+        GTFOAddnTextures.init();
         //GTFOAddnToolItems.init();
     }
 
