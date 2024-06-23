@@ -50,4 +50,7 @@ dependencies {
     implementation "curse.maven:crafttweaker-239197:5354089" //CT 1.12-4.1.20.699
     implementation rfg.deobf("curse.maven:groovyscript-687577:5439031") // GrS 1.1.0-hotfix1
     implementation rfg.deobf("curse.maven:ctm-267602:2915363") // CTM 1.0.2.31
+
+    runtimeOnly rfg.deobf("curse.maven:appleskin-248787:2987247")
+    runtimeOnly rfg.deobf("curse.maven:just-enough-calculation-242223:3524685")
 }

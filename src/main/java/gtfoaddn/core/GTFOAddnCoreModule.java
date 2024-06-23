@@ -11,6 +11,7 @@ import gtfoaddn.common.items.GTFOAddnMetaItems;
 import gtfoaddn.common.metatileentities.GTFOAddnMetaTileEntities;
 import gtfoaddn.loaders.GTFOAddnRecipeManager;
 import gtfoaddn.loaders.recipe.GTFOAddnFuelRecipes;
+import gtfoaddn.loaders.recipe.GTFOAddnLiquidNutritonRecipes;
 import gtfoaddn.modules.GTFOAddnModules;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -90,6 +91,7 @@ public class GTFOAddnCoreModule implements IGTFOAddnModule {
         //GTFOAddnRecipe.init();
         //GTFOAddnWoodRecipe.init();
         GTFOAddnFuelRecipes.registerFuels();
+        GTFOAddnLiquidNutritonRecipes.init();
         //CEUOverrideRecipe.init();
         //VanillaOverrideRecipes.init();
     }

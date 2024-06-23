@@ -1,6 +1,8 @@
 package gtfoaddn.common.metatileentities;
 
+import gregtech.api.GTValues;
 import gregtech.api.metatileentity.SimpleGeneratorMetaTileEntity;
+import gregtech.api.metatileentity.SimpleMachineMetaTileEntity;
 import gregtech.api.recipes.RecipeMaps;
 import gregtech.api.util.GTUtility;
 import gregtech.client.renderer.texture.Textures;
@@ -9,13 +11,18 @@ import gtfoaddn.api.util.GTFOAddnLog;
 import gtfoaddn.client.renderer.texture.GTFOAddnTextures;
 import gtfoaddn.common.metatileentities.electric.MetaTileEntitySingleBurning;
 import gtfoaddn.recipe.GTFOAddnRecipeMaps;
+import net.minecraft.util.ResourceLocation;
 
 import static gregtech.common.metatileentities.MetaTileEntities.registerMetaTileEntity;
+import static gregtech.common.metatileentities.MetaTileEntities.registerSimpleMetaTileEntity;
 import static gtfoaddn.api.util.GTFOAddnUtility.gtfoaddnId;
 
 public class GTFOAddnMetaTileEntities {
     //generators
     public static final SimpleGeneratorMetaTileEntity[] FAT_BURNING_GENERATOR = new SimpleGeneratorMetaTileEntity[6];
+
+    //Simple Machines
+    public static final SimpleMachineMetaTileEntity[] NUTRITION_EXTRACTOR = new SimpleMachineMetaTileEntity[GTValues.V.length - 1];
 
     public static void init() {
         GTFOAddnLog.logger.info("Registering MetaTileEntities");
@@ -41,6 +48,7 @@ public class GTFOAddnMetaTileEntities {
          * - FREE RANGE 11000-32767
          */
 
+        //Generators 31000~31099
         FAT_BURNING_GENERATOR[0] = registerMetaTileEntity(31000,
                 new MetaTileEntitySingleBurning(gtfoaddnId("fat_burning_generator.lv"),
                         GTFOAddnRecipeMaps.BURNING_GENERATOR_FUELS, GTFOAddnTextures.FAT_BURNING_GENERATOR_OVERLAY, 1,
@@ -65,5 +73,9 @@ public class GTFOAddnMetaTileEntities {
                 new MetaTileEntitySingleBurning(gtfoaddnId("fat_burning_generator.luv"),
                         GTFOAddnRecipeMaps.BURNING_GENERATOR_FUELS, GTFOAddnTextures.FAT_BURNING_GENERATOR_OVERLAY, 6,
                         GTUtility.genericGeneratorTankSizeFunction));
+
+        //Simple Machines 32000~32099
+        registerSimpleMetaTileEntity(NUTRITION_EXTRACTOR, 305, "nutrition_extractor", GTFOAddnRecipeMaps.NUTRITION_EXTRACTOR_RECIPES,
+                Textures.EXTRACTOR_OVERLAY, true,gtfoaddnId("nutrition_extractor"), GTUtility.hvCappedTankSizeFunction);
     }
 }
