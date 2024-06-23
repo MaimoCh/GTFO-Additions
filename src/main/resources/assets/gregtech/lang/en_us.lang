@@ -5,10 +5,23 @@ gtfoaddn.machine.fat_burning_generator.hv.name=Advanced Fat Burning Generator II
 gtfoaddn.machine.fat_burning_generator.ev.name=Advanced Fat Burning Generator III
 gtfoaddn.machine.fat_burning_generator.iv.name=Elite Fat Burning Generator
 gtfoaddn.machine.fat_burning_generator.luv.name=Elite Fat Burning Generator II
-
+gtfoaddn.machine.nutrition_extractor.lv.name=Basic Nutrition Extractor
+gtfoaddn.machine.nutrition_extractor.mv.name=Advanced Nutrition Extractor
+gtfoaddn.machine.nutrition_extractor.hv.name=Advanced Nutrition Extractor II
+gtfoaddn.machine.nutrition_extractor.ev.name=Advanced Nutrition Extractor III
+gtfoaddn.machine.nutrition_extractor.iv.name=Elite Nutrition Extractor
+gtfoaddn.machine.nutrition_extractor.luv.name=Elite Nutrition Extractor II
+gtfoaddn.machine.nutrition_extractor.zpm.name=Elite Nutrition Extractor III
+gtfoaddn.machine.nutrition_extractor.uv.name=Ultimate Nutrition Extractor
+gtfoaddn.machine.nutrition_extractor.uhv.name=Epic Nutrition Extractor
+gtfoaddn.machine.nutrition_extractor.uev.name=Epic Nutrition Extractor II
+gtfoaddn.machine.nutrition_extractor.uiv.name=Epic Nutrition Extractor III
+gtfoaddn.machine.nutrition_extractor.uxv.name=Epic Nutrition Extractor IV
+gtfoaddn.machine.nutrition_extractor.opv.name=Legendary Nutrition Extractor
 #liquid
 gtfoaddn.material.liquid_nutrition=Liquid Nutrition
 gtfoaddn.material.advanced_liquid_nutrition=Advanced Liquid Nutrition
 
 #recipemap
 recipemap.burning_generator.name=Nutrition Fuels
+reecipemap.nutriton_extractor.name=Nutriton Extract
