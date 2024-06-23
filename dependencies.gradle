@@ -47,7 +47,7 @@ dependencies {
 
     // Soft Dependencies
     implementation rfg.deobf("curse.maven:mixin-booter-419286:5079135") // MixinBooter 9.1
-    implementation rfg.deobf("curse.maven:crafttweaker-239197:5354089") //CT 1.12-4.1.20.699
+    implementation "curse.maven:crafttweaker-239197:5354089" //CT 1.12-4.1.20.699
     implementation rfg.deobf("curse.maven:groovyscript-687577:5439031") // GrS 1.1.0-hotfix1
     implementation rfg.deobf("curse.maven:ctm-267602:2915363") // CTM 1.0.2.31
 }
