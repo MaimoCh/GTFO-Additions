@@ -1,0 +1,14 @@
+#machine
+gtfoaddn.machine.fat_burning_generator.lv.name=Basic Fat Burning Generator
+gtfoaddn.machine.fat_burning_generator.mv.name=Advanced Fat Burning Generator
+gtfoaddn.machine.fat_burning_generator.hv.name=Advanced Fat Burning Generator II
+gtfoaddn.machine.fat_burning_generator.ev.name=Advanced Fat Burning Generator III
+gtfoaddn.machine.fat_burning_generator.iv.name=Elite Fat Burning Generator
+gtfoaddn.machine.fat_burning_generator.luv.name=Elite Fat Burning Generator II
+
+#liquid
+gtfoaddn.material.liquid_nutrition=Liquid Nutrition
+gtfoaddn.material.advanced_liquid_nutrition=Advanced Liquid Nutrition
+
+#recipemap
+recipemap.burning_generator.name=Nutrition Fuels

@@ -11,6 +11,6 @@ public class GTFOAddnMetaItem1 extends StandardMetaItem {
 
     @Override
     public void registerSubItems() {
-        WOODEN_HARD_HAMMER_HEAD = addItem(1, "wooden.hard.hammer.head");
+//        WOODEN_HARD_HAMMER_HEAD = addItem(1, "wooden.hard.hammer.head");
     }
 }

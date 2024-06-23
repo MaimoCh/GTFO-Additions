@@ -8,8 +8,9 @@ import static gtfoaddn.api.util.GTFOAddnUtility.gtfoaddnId;
 public class GTFOAddnFirstDegreeMaterials {
     public static void init() {
 
-        FoodExtract = new Material.Builder(31001, gtfoaddnId("food_extract"))
-                .fluid().color(0xFFF404).build();
-
+        LiquidNutrition = new Material.Builder(31001, gtfoaddnId("liquid_nutrition"))
+                .fluid().color(0xFFF455).build();
+        AdvancedLiquidNutrition = new Material.Builder(31002, gtfoaddnId("advanced_liquid_nutrition"))
+                .fluid().color(0xFFC700).build();
     }
 }
